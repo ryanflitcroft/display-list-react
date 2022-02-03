@@ -20,7 +20,14 @@ export async function getRestaurants() {
   const response = await client
     .from('restaurants')
     .select();
-  // console.log('||response', response.data);
+
+  return checkError(response);
+}
+
+export async function getBands() {
+  const response = await client
+    .from('bands')
+    .select();
 
   return checkError(response);
 }
