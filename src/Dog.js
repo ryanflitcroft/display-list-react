@@ -2,13 +2,11 @@ import React from 'react';
 
 export default function Dog({ dog }) {
   return (
-    <>
-      <p>{dog.name}</p>
-      <p>{dog.breed}</p>
-      <p>{dog.age}</p>
+    <div>
+      <p>{dog.name} is a {dog.age} year old {dog.breed} who enjoys:</p>
       {dog.likes.map((like, i) => 
-        <p key={like, i}>{like}</p>
+        <p key={like, i}>{like} </p>
       )}
-    </>
+    </div>
   );
 }
