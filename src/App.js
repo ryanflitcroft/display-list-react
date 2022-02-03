@@ -2,10 +2,10 @@
 import './App.css';
 import { getBands, getDogs, getMovies, getRestaurants } from './services/fetch-utils';
 import { useState, useEffect } from 'react';
-import Dogs from './Dogs';
-import Movies from './Movies';
-import Restaurants from './Restaurants';
-import Bands from './Bands';
+import DogsList from './DogsList';
+import MoviesList from './MoviesList';
+import RestaurantsList from './RestaurantsList';
+import BandsList from './BandsList';
 
 function App() {
   const [dogs, setDogs] = useState([]);
@@ -42,10 +42,10 @@ function App() {
 
   return (
     <main>
-      <Dogs dogs={dogs} />
-      <Movies movies={movies} />
-      <Restaurants restaurants={restaurants} />
-      <Bands bands={bands} />
+      <DogsList dogs={dogs} />
+      <MoviesList movies={movies} />
+      <RestaurantsList restaurants={restaurants} />
+      <BandsList bands={bands} />
     </main>
   );
 }
