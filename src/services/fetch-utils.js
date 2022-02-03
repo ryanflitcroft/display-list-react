@@ -15,3 +15,12 @@ export async function getMovies() {
 
   return checkError(response);
 }
+
+export async function getRestaurants() {
+  const response = await client
+    .from('restaurants')
+    .select();
+  // console.log('||response', response.data);
+
+  return checkError(response);
+}
