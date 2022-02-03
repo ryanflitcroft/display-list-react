@@ -42,6 +42,7 @@ function App() {
 
   return (
     <main>
+      <h1>Display a List</h1>
       <DogsList dogs={dogs} />
       <MoviesList movies={movies} />
       <RestaurantsList restaurants={restaurants} />
